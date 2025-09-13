@@ -1,0 +1,36 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Dataset and large files
+*.pkl
+*.h5
+*.pt
+
+# Logs and temp files
+*.log
+*.tmp
+
+# macOS system files
+.DS_Store
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Hugging Face cache (optional, if you want to ignore)
+.huggingface/
+
+# Others
+*.swp
+
+# JetBrains IDE settings
+.idea/
+
+# Gradio local files
+.gradio/
