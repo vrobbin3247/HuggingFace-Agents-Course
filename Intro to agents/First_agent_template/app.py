@@ -68,6 +68,20 @@ custom_role_conversions=None,
 # Import tool from Hub
 image_generation_tool = load_tool("agents-course/text-to-image", trust_remote_code=True)
 
+
+@tool
+def mage_generation_tool(prompt:str)->str:
+    """A tool that generates image from given prompt.
+
+Args:
+    prompt: A string that says generate followed by image prompt  (e.g., 'generate image of a cat').
+
+Returns:
+    A string containing the top search results from DuckDuckGo.
+"""
+    results = web_tool(query)
+    return results
+
 with open("prompts.yaml", 'r') as stream:
     prompt_templates = yaml.safe_load(stream)
     
